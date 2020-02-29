@@ -33,7 +33,7 @@ NS_ :
 
 BS_:
 
-BU_: Gateway ESR Vector__XXX
+BU_: Gateway ESR Vector__XXX XXX
 
 
 BO_ 1343 Target64: 8 Vector__XXX
@@ -1065,11 +1065,12 @@ BO_ 1248 ESR_Status: 8 ESR
  SG_ CAN_TX_ROLLING_COUNT_1 : 6|2@1+ (1,0) [0|3] "" Vector__XXX
 
 BO_ 33 BRAKE: 8 XXX
+ SG_ NEW_SIGNAL_1 : 63|8@0+ (1,0) [0|255] "" XXX
 
 
 
 
-
+CM_ SG_ 33 NEW_SIGNAL_1 "0x69 when not engaged";
 VAL_ 1264 CAN_RX_YAW_RATE_VALIDITY 1 "Valid" 0 "Invalid" ;
 VAL_ 1264 CAN_RX_VEHICLE_SPEED_DIRECTION 1 "Reverse" 0 "Forward" ;
 VAL_ 1264 CAN_RX_STEERING_VALIDITY 1 "True" 0 "False" ;
